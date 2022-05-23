@@ -201,26 +201,16 @@ class PresentrController: UIPresentationController, UIAdaptivePresentationContro
     }
     
     fileprivate func registerKeyboardObserver() {
-        #if swift(>=4.2)
         let keyboardWasShownKey = UIResponder.keyboardWillShowNotification
         let keyboardWillHideKey = UIResponder.keyboardWillHideNotification
-        #else
-        let keyboardWasShownKey = UIResponder.keyboardWillShowNotification
-        let keyboardWillHideKey = UIResponder.keyboardWillHideNotification
-        #endif
 
         NotificationCenter.default.addObserver(self, selector: #selector(PresentrController.keyboardWasShown(notification:)), name: keyboardWasShownKey, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(PresentrController.keyboardWillHide(notification:)), name: keyboardWillHideKey, object: nil)
     }
     
     fileprivate func removeObservers() {
-        #if swift(>=4.2)
         let keyboardWasShownKey = UIResponder.keyboardWillShowNotification
         let keyboardWillHideKey = UIResponder.keyboardWillHideNotification
-        #else
-        let keyboardWasShownKey = UIResponder.keyboardWillShowNotification
-        let keyboardWillHideKey = UIResponder.keyboardWillHideNotification
-        #endif
 
         NotificationCenter.default.removeObserver(self, name: keyboardWasShownKey, object: nil)
         NotificationCenter.default.removeObserver(self, name: keyboardWillHideKey, object: nil)
@@ -338,12 +328,7 @@ fileprivate extension PresentrController {
     func getWidthFromType(_ parentSize: CGSize) -> Float {
         guard let size = presentationType.size() else {
             if case .dynamic = presentationType {
-                #if swift(>=4.2)
                 let sizeKey = UIView.layoutFittingCompressedSize
-                #else
-                let sizeKey = UIView.layoutFittingCompressedSize
-                #endif
-
                 return Float(presentedViewController.view.systemLayoutSizeFitting(sizeKey).width)
             }
             return 0
@@ -355,12 +340,7 @@ fileprivate extension PresentrController {
     func getHeightFromType(_ parentSize: CGSize) -> Float {
         guard let size = presentationType.size() else {
             if case .dynamic = presentationType {
-                #if swift(>=4.2)
                 let sizeKey = UIView.layoutFittingCompressedSize
-                #else
-                let sizeKey = UIView.layoutFittingCompressedSize
-                #endif
-
                 return Float(presentedViewController.view.systemLayoutSizeFitting(sizeKey).height)
             }
             return 0
