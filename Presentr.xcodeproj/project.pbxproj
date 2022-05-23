@@ -263,11 +263,11 @@
 			};
 			buildConfigurationList = 0680CC291CE3EFA900CBAE4F /* Build configuration list for PBXProject "Presentr" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 0680CC251CE3EFA900CBAE4F;
 			productRefGroup = 0680CC301CE3EFA900CBAE4F /* Products */;
