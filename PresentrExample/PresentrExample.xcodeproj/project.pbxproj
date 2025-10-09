@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,7 @@
 		06A1F0BB1CF3D17E0057C79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A1F0BA1CF3D17E0057C79B /* Assets.xcassets */; };
 		06A1F0BE1CF3D17E0057C79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1F0BC1CF3D17E0057C79B /* LaunchScreen.storyboard */; };
 		06C00C772095478A00727CC2 /* PasstroughExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C00C762095478A00727CC2 /* PasstroughExampleViewController.swift */; };
-		25591534D92612E66093237C /* Pods_PresentrExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9985464B38C3FFC83D568727 /* Pods_PresentrExample.framework */; };
+		AEA7062D2E97B138008D1E25 /* Presentr in Frameworks */ = {isa = PBXBuildFile; productRef = AEA7062C2E97B138008D1E25 /* Presentr */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,9 +52,6 @@
 		06A1F0BD1CF3D17E0057C79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A1F0BF1CF3D17E0057C79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06C00C762095478A00727CC2 /* PasstroughExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasstroughExampleViewController.swift; sourceTree = "<group>"; };
-		2D9A1F9F4161E3588659C3CF /* Pods-PresentrExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentrExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PresentrExample/Pods-PresentrExample.release.xcconfig"; sourceTree = "<group>"; };
-		9985464B38C3FFC83D568727 /* Pods_PresentrExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresentrExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B37B2AC285D84D58CC7D5CA3 /* Pods-PresentrExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentrExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PresentrExample/Pods-PresentrExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25591534D92612E66093237C /* Pods_PresentrExample.framework in Frameworks */,
+				AEA7062D2E97B138008D1E25 /* Presentr in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +81,6 @@
 			children = (
 				06A1F0B21CF3D17E0057C79B /* PresentrExample */,
 				06A1F0B11CF3D17E0057C79B /* Products */,
-				0C4758AD2BB0A469801F233C /* Pods */,
-				FC2179870F3AC2AF401182C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,23 +111,6 @@
 			path = PresentrExample;
 			sourceTree = "<group>";
 		};
-		0C4758AD2BB0A469801F233C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B37B2AC285D84D58CC7D5CA3 /* Pods-PresentrExample.debug.xcconfig */,
-				2D9A1F9F4161E3588659C3CF /* Pods-PresentrExample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FC2179870F3AC2AF401182C7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9985464B38C3FFC83D568727 /* Pods_PresentrExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,12 +118,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06A1F0C21CF3D17E0057C79B /* Build configuration list for PBXNativeTarget "PresentrExample" */;
 			buildPhases = (
-				F965E49DDC461133DEBE58C5 /* [CP] Check Pods Manifest.lock */,
 				06A1F0AC1CF3D17E0057C79B /* Sources */,
 				06A1F0AD1CF3D17E0057C79B /* Frameworks */,
 				06A1F0AE1CF3D17E0057C79B /* Resources */,
 				06BBD0471D383B80003436EB /* Embed Frameworks */,
-				C131AD3CBD45F77182DA96B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +144,7 @@
 				TargetAttributes = {
 					06A1F0AF1CF3D17E0057C79B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = B5T5SVYZ6H;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
@@ -178,10 +155,14 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 06A1F0A71CF3D17E0057C79B;
+			packageReferences = (
+				AEA7062B2E97B138008D1E25 /* XCLocalSwiftPackageReference "../../Presentr" */,
+			);
 			productRefGroup = 06A1F0B11CF3D17E0057C79B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,45 +184,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C131AD3CBD45F77182DA96B9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PresentrExample/Pods-PresentrExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PresentrExample/Pods-PresentrExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F965E49DDC461133DEBE58C5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PresentrExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06A1F0AC1CF3D17E0057C79B /* Sources */ = {
@@ -379,7 +321,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -387,19 +330,22 @@
 		};
 		06A1F0C31CF3D17E0057C79B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B37B2AC285D84D58CC7D5CA3 /* Pods-PresentrExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = B5T5SVYZ6H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PresentrExample",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PresentrExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = danielozano.PresentrExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -408,19 +354,22 @@
 		};
 		06A1F0C41CF3D17E0057C79B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D9A1F9F4161E3588659C3CF /* Pods-PresentrExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = B5T5SVYZ6H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PresentrExample",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PresentrExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = danielozano.PresentrExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -449,6 +398,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AEA7062B2E97B138008D1E25 /* XCLocalSwiftPackageReference "../../Presentr" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Presentr;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AEA7062C2E97B138008D1E25 /* Presentr */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentr;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06A1F0A81CF3D17E0057C79B /* Project object */;
 }

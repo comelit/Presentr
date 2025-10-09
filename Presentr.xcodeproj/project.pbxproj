@@ -16,7 +16,6 @@
 		06686C741CE8248D00F88216 /* PresentrAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06686C731CE8248D00F88216 /* PresentrAnimation.swift */; };
 		06686C761CE8250200F88216 /* CoverVerticalFromTopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06686C751CE8250200F88216 /* CoverVerticalFromTopAnimation.swift */; };
 		06686C9D1CE947E200F88216 /* CoverHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06686C9C1CE947E200F88216 /* CoverHorizontalAnimation.swift */; };
-		0680CC331CE3EFA900CBAE4F /* Presentr.h in Headers */ = {isa = PBXBuildFile; fileRef = 0680CC321CE3EFA900CBAE4F /* Presentr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0680CC3A1CE3EFA900CBAE4F /* Presentr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680CC2F1CE3EFA900CBAE4F /* Presentr.framework */; };
 		0680CC3F1CE3EFA900CBAE4F /* PresentrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0680CC3E1CE3EFA900CBAE4F /* PresentrTests.swift */; };
 		0680CC4D1CE3EFC500CBAE4F /* Presentr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0680CC491CE3EFC500CBAE4F /* Presentr.swift */; };
@@ -54,7 +53,6 @@
 		06686C751CE8250200F88216 /* CoverVerticalFromTopAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverVerticalFromTopAnimation.swift; sourceTree = "<group>"; };
 		06686C9C1CE947E200F88216 /* CoverHorizontalAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverHorizontalAnimation.swift; sourceTree = "<group>"; };
 		0680CC2F1CE3EFA900CBAE4F /* Presentr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0680CC321CE3EFA900CBAE4F /* Presentr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentr.h; sourceTree = "<group>"; };
 		0680CC341CE3EFA900CBAE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0680CC391CE3EFA900CBAE4F /* PresentrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0680CC3E1CE3EFA900CBAE4F /* PresentrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentrTests.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 		0680CC311CE3EFA900CBAE4F /* Presentr */ = {
 			isa = PBXGroup;
 			children = (
-				0680CC321CE3EFA900CBAE4F /* Presentr.h */,
 				0680CC491CE3EFC500CBAE4F /* Presentr.swift */,
 				0680CC4B1CE3EFC500CBAE4F /* PresentrController.swift */,
 				06B585571D2D6F4B0045C8DA /* PresentationType.swift */,
@@ -196,7 +193,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0680CC331CE3EFA900CBAE4F /* Presentr.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
